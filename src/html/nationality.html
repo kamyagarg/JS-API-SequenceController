@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+
+    <title>Nationality</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <div class="heading">Know the Country</div>
+            <div class="sub_heading">Lets find out where your name is famous the most</div>
+
+            <form  name="myForm" id="myForm" class="reg-form">
+
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" value="" placeholder="Enter your name" ><br>
+                <div class="error-msg" id="inp_name_error"></div>
+
+                <input type="submit" value="Know Your Nationality" id="click" />​
+
+                <div class="loader" id="loader_id" style="display: none;" ></div> 
+
+
+                <div id="output" style="display: none;">
+                    <div class="country_id">
+                        <label for="">Country code:</label>
+                        <label for="" id="c_id"></label><br>
+                        <a href="https://www.iban.com/country-codes" class="KnowMore">Link to all country codes</a>
+                    </div>
+                    <div class="probablity">
+                        <label for="">Probablity:</label>
+                        <label for="" id="prob"></label>
+
+                    </div>
+                    <!-- <input type="submit" value="Try Again?" id="try_again" onsubmit="clearForm()" /> -->
+                    <button id="try_again" onclick="clearForm()">Try Again</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- <script src="../js/callback.js"></script> -->
+    <!-- <script src="../js/promises.js"></script> -->
+    <script src="../js/async.js"></script>
+</body>
+</html>
